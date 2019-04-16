@@ -1,0 +1,134 @@
+html, body{
+
+	margin: 0;
+	width: 100%;
+	height:100%;
+
+}
+
+.container{
+
+	margin: 0 auto;
+	margin-top: 20px;
+	position:relative;
+	width: 600px;
+	height: 400px;
+	background: gray;
+	border: solid 5px black;
+}
+
+
+.slidepic{
+	
+	height:100%;
+	width:100%;
+	position:absolute;
+	
+	
+}
+
+.slidepic img{
+	
+	height:100%;
+	width:100%;
+	
+	
+}
+
+
+
+#i1, #i2 , #i3{
+	
+	display:none;
+		
+	
+}
+
+
+.prev , .next{
+	
+	background-color: gray;
+	opacity: 0.5;
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+	top:0;
+}
+
+.prev{
+	
+	left:0;
+}
+.next{
+	
+	right:0;
+}
+
+.navigation{
+	
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position:absolute;
+	text-align:center;
+	z-index: 99;
+	}
+	
+	
+.bilog{
+	
+	top: -5px;
+	width: 18px;
+	height:18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: white;
+	
+	
+}	
+
+
+.slidepic{
+z-index: -1;
+animation: lipat 3s infinite;
+}
+
+#i1:checked ~ #una, 
+#i2:checked ~ #pangalawa,
+#i3:checked ~ #pangatlo
+{
+z-index: 9;
+	
+}
+
+
+@keyframes lipat{
+	0%   {
+		
+		 #una
+			{
+				z-index: -1 ;
+			}
+						
+	}
+    50%  {
+			
+		 #pangalawa
+			{
+				z-index: -1 ;
+			}
+		
+	}
+    100% {
+		
+	 #pangatlo
+			{
+				z-index: -1 ;
+			}
+	}			
+	
+
+}
